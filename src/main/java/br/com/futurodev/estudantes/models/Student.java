@@ -3,13 +3,13 @@ package br.com.futurodev.estudantes.models;
 import java.util.Objects;
 
 public class Student {
-    private int registro;
+    private Long registro;
     private String nome;
     private String email;
 
 
     public Student(){}
-    public Student(int registro, String nome, String email) {
+    public Student(Long registro, String nome, String email) {
         this.registro = registro;
         this.nome = nome;
         this.email = email;
@@ -27,11 +27,11 @@ public class Student {
         return Objects.hash(registro, nome, email);
     }
 
-    public int getRegistro() {
+    public Long getRegistro() {
         return registro;
     }
 
-    public void setRegistro(int registro) {
+    public void setRegistro(Long registro) {
         this.registro = registro;
     }
 
